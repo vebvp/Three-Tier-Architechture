@@ -1,0 +1,12 @@
+<?php
+// Copy this file to db.php on the app server and fill in your real values.
+// NEVER commit db.php to GitHub.
+$host = "YOUR-RDS-ENDPOINT.ap-south-1.rds.amazonaws.com";
+$user = "YOUR_DB_USER";
+$pass = "YOUR_DB_PASSWORD";
+$db   = "registration_db";
+
+$conn = new mysqli($host, $user, $pass, $db);
+if ($conn->connect_error) {
+    die("Database connection failed.");
+}
