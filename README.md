@@ -178,7 +178,7 @@ Description of each group (use in the "Description" field):
 2. **RDS → Databases → Create database**:
    - Standard create → **MySQL** · DB instance identifier: `database-1`
    - Template: **Free tier / Dev-Test**
-   - Master username and password (save them safely – never commit them to GitHub)
+   - Master username and password (Example : MasterUser- root Pass- pass1234)
    - Connectivity: VPC = your VPC, DB subnet group = `tta-db-subnet-group`, **Public access = No**, Security group = `DbSG`
 3. Click **Create database** and wait until the status is **Available**.
 4. Copy the **Endpoint** (you need it in `db.php`).
